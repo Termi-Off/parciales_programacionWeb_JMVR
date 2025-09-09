@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css_estilos/estilo_form_admin.css">
+
+    <!-- link script js -->
+        <script src="functions_js/funciones_menu_admin.js"></script>
+
+    <!-- links bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Nombre de la empresa</title>
+</head>
+<body>
+    <!-- titulo formularo -->
+    <div class="d-flex align-items-center justify-content-center">
+            <h1 class="titulo_login">Por favor ingrese sus credenciales para acceder al sistema</h1>
+    </div>
+    <!-- formulario -->
+    <div class="formulario_admin container">
+        <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Usuario</label>
+    <div class="col-sm-10">
+    <input type="text" class="form-control" id="staticEmail" value="">
+    </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Clave</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+
+    <!-- btns formulario -->
+    <div class="bloque_btns d-flex align-items-center justify-content-center">
+        <button type="button" class="boton_1 btn btn-lg" onclick="login(event)">Log In</button>
+        <button type="button" class="boton_2 btn btn-lg" onclick="signup()">Sign Up</button>
+        <button type="button" class="boton_3 btn btn-lg" onclick="cancelar(event)">Cancelar</button>
+    </div>
+
+    <!-- JS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

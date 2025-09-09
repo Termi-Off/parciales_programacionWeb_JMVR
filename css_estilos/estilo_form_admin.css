@@ -1,0 +1,9 @@
+.titulo_login{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.boton_1, .boton_2, .boton_3{
+    margin: solid 1px black;
+}
