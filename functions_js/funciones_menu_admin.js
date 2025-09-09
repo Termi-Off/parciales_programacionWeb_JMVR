@@ -1,22 +1,15 @@
-function login(event){
+// Log In: muestra usuario y contraseña por consola
+function login(event) {
     event.preventDefault();
-
-    let correo = document.getElementById("staticEmail");
-    let password = document.getElementById("inputPassword");
-    // Expresiones regulares para validar el correo y la contraseña
-
-    let contra = "Password123";
-    let regex_correo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    let regex_password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
-
-    if (regex_correo.test(correo.value) && password.value === contra) {
-        // Credenciales válidas
-        alert("Inicio de sesión exitoso");
-        window.location.href="index.html";
-    } else {
-        // Credenciales inválidas
-        alert("Correo o contraseña incorrectos, pendejo");
+    const usuario = document.getElementById("staticEmail").value.trim();
+    const password = document.getElementById("inputPassword").value.trim();
+    if (!usuario || !password) {
+        alert("Por favor ingrese usuario y contraseña.");
+        return;
     }
+    console.log("Usuario:", usuario);
+    console.log("Contraseña:", password);
+    alert("Datos enviados a consola.");
 }
 
 function logout(){
@@ -34,11 +27,3 @@ function cancelar(event){
     event.preventDefault();
     window.location.href="index.html";
 }
-
-// function registrarse(){
-//     alert("Nombres registrados:");
-//     alert("Apellidos registrados:");
-//     alert("Emal registrado:");
-//     alert("Telefono registrado:");
-//     alert("Nombres registrados:");
-// }
